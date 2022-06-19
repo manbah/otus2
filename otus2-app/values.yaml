@@ -1,0 +1,22 @@
+replicaCount: 1
+
+app:
+  name: app
+  service:
+    type: ClusterIP
+    port: 8080
+    targetPort: 8080
+
+containers:
+  name: app
+  image: mansurib/otus-2:1.1.0
+  ports: 8080
+
+secret:
+  name: postgres-secret
+
+config:
+  name: app-postgres-config
+  data:
+    - key: DB_HOST
+      value: postgres
