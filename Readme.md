@@ -1,7 +1,7 @@
 **Otus 2 Home work**
 
 **Run instruction**
-1) create postgres instance
+1) To create postgres instance
 run
    <code>helm install postgres ./postgres --set volumePermissions.enabled=true</code>
 
