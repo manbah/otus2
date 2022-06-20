@@ -9,7 +9,7 @@ app:
 
 containers:
   name: app
-  image: mansurib/otus-2:1.1.0
+  image: mansurib/otus-2:1.1.2
   ports: 8080
 
 secret:
